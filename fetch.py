@@ -14,6 +14,7 @@ def get():
 
     with open(brd, "r") as file:
         data = json.load(file)
+        file.close()
 
     return data
 
